@@ -154,14 +154,16 @@ In some environments it may not be possible to use the couchbase.xml ant script 
 4.  Update the project's AndroidManifest.xml to declare the Couchbase service and request the required permissions.
 
     Within the "application" section add:
-
+    ```
     <service android:name="com.couchbase.android.CouchbaseService" android:enabled="true" android:exported="false"/>
+    ```
 
     Within the "manifest" section add:
-
+    ```
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    ```
 
 ## Requirements
 
